@@ -74,7 +74,7 @@ WSGI_APPLICATION = "octofit_tracker.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "djongo",
-        "NAME": "octofit_db",
+        "NAME": "monafit_db",
         "HOST": "localhost",
         "PORT": 27017,
     }
@@ -148,3 +148,4 @@ CORS_ALLOW_HEADERS = [
 
 # Permitir todos os hosts
 ALLOWED_HOSTS = ['*']
+
