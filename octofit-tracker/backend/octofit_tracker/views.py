@@ -7,7 +7,7 @@ from .models import User, Team, Activity, Leaderboard, Workout
 
 @api_view(['GET'])
 def api_root(request, format=None):
-    base_url = os.getenv('CODESPACE_URL', 'http://localhost:8000')
+    base_url = os.getenv('CODESPACE_URL', 'https://symmetrical-space-funicular-pqv4vrww7xv35rv-8000.app.github.dev')
     return Response({
         'users': base_url + '/api/users/',
         'teams': base_url + '/api/teams/',
@@ -35,4 +35,3 @@ class LeaderboardViewSet(viewsets.ModelViewSet):
 class WorkoutViewSet(viewsets.ModelViewSet):
     queryset = Workout.objects.all()
     serializer_class = WorkoutSerializer
-    
