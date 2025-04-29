@@ -32,7 +32,7 @@ if not SECRET_KEY:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost').split(',')
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost,[REPLACE-THIS-WITH-YOUR-CODESPACE-NAME]-8000.app.github.dev').split(',')
 
 CODESPACE_URL = os.getenv('CODESPACE_URL', 'http://localhost:8000')
 
